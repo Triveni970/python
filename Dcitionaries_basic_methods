@@ -1,0 +1,22 @@
+
+dict_contacts = {"Names": ["Sri", "Sasi", "Sai", "Sam"] ,
+"PhoneNumbers": ["1234211", "67546788", "567465728", "6574657"],
+"EmaiL": ["sri@gmail.com", "sasi@gmail.com", "sai@gmail.com", "sam@gmail.com"],
+"Address": ["Apt-1", "Apt-2", "Apt-3", "Apt-4"]}
+print(dict_contacts)       #Prints entire dictionary
+print(dict_contacts.keys())    #Prints only keys in dictionary
+print(dict_contacts.values())   #Prints only values in dictionary
+print(dict_contacts['Names'][1]) #Prints particular index value of particluar key
+dict_contacts['Names'] = "Sri1", "Sasi1", "Sai1", "Sam1"   #Updates values of particular key
+dict_contacts.update({'Names':  ["Suma", "Sravani"]})      #Updates values of particular key
+dict_contacts['Names'].append("Harini")                    #Adds new value(one value) to given key
+dict_contacts['Names'].extend(["Harshitha", "Soundarya"])  #Adds new value(more than one value) to given key
+print(dict_contacts)
+dict_contacts.pop('PhoneNumbers')     #Removes particular/given key
+print(dict_contacts.keys())
+dict_contacts.popitem()      #Removes last item (both key value )
+print(dict_contacts.items()) #Prints entire dictionary (key-value pairs)
+print(len(dict_contacts))     #Gives number of key-value pairs in dictionary
+print(dict_contacts.get('Names'))   #Retrives values of particular key
+print(dict_contacts['Names'])      #Retrives values of particular key
+print(dict_contacts['Address'])
